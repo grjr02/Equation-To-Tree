@@ -1,0 +1,52 @@
+
+<div class = "container"> 
+    <form class="form" [formGroup] = "eqForm" (ngSubmit) = "convertEq()" >
+        <mat-card @fade class= "card">
+            <mat-form-field class="form-field" >
+            
+                <input matInput = "text"
+                    
+                    formControlName = "name"
+                    placeholder="Enter equation"
+                    autocomplete="off"
+                    maxlength="15"
+
+                    >
+                    
+                <!-- <mat-hint>Max 15 characters</mat-hint> -->
+                <button 
+                    mat-flat-button
+                    matSuffix
+                    type = "submit"
+                    [disabled] = "!eqForm.valid"
+                >Enter</button>
+
+                
+                <mat-error *ngIf="!eqForm.valid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </mat-card>
+    </form>
+    
+</div>
+
+
+<div class = "display1" style="text-align:center">
+    <o2-chart-lib-o2-chart class = "chart1"
+        [chartType]="treeTypeName" 
+        [configData]="configData"  
+        [graphData]="treeDataJson" 
+        [svgWidth]="'500'" 
+        [svgHeight]="'333.33'">
+    </o2-chart-lib-o2-chart>
+    
+  </div>
+  <!-- <div class = "display2" style="text-align:center">
+    <o2-chart-lib-o2-chart class = "chart1"
+        [chartType]="treeTypeName" 
+        [configData]="configData"  
+        [graphData]="treeDataJson" 
+        [svgWidth]="'200'" 
+        [svgHeight]="'200'">
+    </o2-chart-lib-o2-chart>
+    
+  </div> -->

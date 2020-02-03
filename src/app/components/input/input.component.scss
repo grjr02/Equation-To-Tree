@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 25%;
+	color: white;
+
+    background-color: none;
+    
+}
+.card{
+    margin-left: 1%;
+    transform: translateY(15%);
+    background-color:rgba(230, 173, 173, 0);
+    color: rgba(255, 255, 255, 0);
+    height: 50%;
+    width: 40%;
+    box-shadow: 0px;
+   
+}
+
+.form-field{
+    width:100%;
+    margin-top: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    
+}
+
+button{
+
+    background-color: rgba(255, 255, 255, 0);
+    color: salmon;
+    
+    
+}
+
+
+  
+.example-container > * {
+    background-color: none;
+
+    width: 500px;
+}
+
+
+
+
+.input.placeholder{
+    color: coral;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+    // .card{
+    //     height: 60%;
+    // }
+    .form-field {
+        transform: translateY(-15%);
+    }
+  }
+
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,1), 
+                0 0px 0px 0 rgba(0,0,0,1), 
+                0 0px 0px 0 rgba(0,0,0,1);
+}
+
+.mat-input-invalid .mat-input-placeholder {
+	color: white;
+	//background-color: white;
+
+}
+
+.mat-input-invalid .mat-input-ripple {
+	background-color: white;
+	color: white;
+}
+mat-error{
+	color: white;
+	//background-color: white;
+
+}
+// .display2{
+//     display: none;
+//     margin: 0;
+// }
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 25%;
+        color: white;
+    
+        background-color: none;
+        
+    }
+    .card{
+        margin-left: 1%;
+        transform: translateY(15%);
+        background-color:rgba(230, 173, 173, 0);
+        color: rgba(255, 255, 255, 0);
+        height: 75%;
+        width: 80%;
+        box-shadow: 0px;
+       
+    }
+    .display1{
+        transform: translateX(-10%);
+        //margin-left: 0;
+    }
+
+
+}

@@ -1,0 +1,27 @@
+*{
+	overflow: hidden;
+}
+main{
+	height: 100%;
+	background-color: rgb(8, 56, 78);
+}
+h1{
+	margin: 0;
+	height: 6.25%;
+	//background-color: lightblue;
+	color: white;
+	text-align: center;
+}
+.body{
+	margin-top: 3%;
+	height: 100%;
+	//background-color: lightblue;
+}
+.input{
+	height: 100%;
+	//background-color: rgb(0, 128, 128);
+}
+.display{
+	height: 70%;
+	background-color: salmon;
+}
